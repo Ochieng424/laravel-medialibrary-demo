@@ -2058,6 +2058,10 @@ __webpack_require__.r(__webpack_exports__);
       };
       axios.post('/products', this.formProduct, config).then(function (response) {
         _this2.isLoading = false;
+        _this2.form = {
+          name: '',
+          price: ''
+        };
         swal.fire({
           type: 'success',
           title: 'Success!!',

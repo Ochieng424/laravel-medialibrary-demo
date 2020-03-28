@@ -20,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
@@ -158,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585404081815</updated>
       <workItem from="1585404084308" duration="641000" />
-      <workItem from="1585404761861" duration="7961000" />
+      <workItem from="1585404761861" duration="8577000" />
     </task>
     <servers />
   </component>

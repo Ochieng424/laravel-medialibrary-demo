@@ -41,6 +41,7 @@
     import Loading from 'vue-loading-overlay';
     // Import stylesheet
     import 'vue-loading-overlay/dist/vue-loading.css';
+
     export default {
         name: "Home",
         components: {
@@ -62,8 +63,8 @@
             }
         },
         methods: {
-            getProducts(){
-                axios.get('/products').then((data)=>{
+            getProducts() {
+                axios.get('/products').then((data) => {
                     this.products = data.data
                 })
             },
@@ -77,6 +78,10 @@
                 const config = {headers: {'Content-Type': 'multipart/form-data'}};
                 axios.post('/products', this.formProduct, config).then(response => {
                     this.isLoading = false;
+                    this.form = {
+                        name: '',
+                        price: ''
+                    };
                     swal.fire({
                         type: 'success',
                         title: 'Success!!',
